@@ -24,13 +24,3 @@ variable "database_password" {
     error_message = "The database password must contain at least 8 characters."
   }
 }
-
-variable "staging_domain_name" {
-  type = string
-  description = "Domain name of the staging app. e.g. test.herokuapp.com"
-}
-
-variable "staging_origin_id" {
-  type = string
-  description = "Identifier for the staging origin. e.g. app-name-test"
-}
